@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKMARK</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>BOOKSKY</h1>
+            <button onclick="make()">+</button>
+        </div>
+    <div class="get">
+        <div class="form">
+        <form action="">
+            <h2>
+                Enter the book details
+            </h2>
+                <input type="text" name="bookname" id="book-name" placeholder="Enter the book name" required>
+                <input type="text" name="authorkname" id="author-name" placeholder="Enter the author name" required>
+                <textarea name="bookcontent" id="book-content" placeholder="Enter the book content" required></textarea>
+            <div class="but">
+                <button onclick="added(event)">ADD</button>
+                <button onclick="del(event)">CANCLE</button>
+            </div>
+        </form>
+        </div>
+    </div>
+   
+    <script src="new.js"></script>
+</body>
+</html>
