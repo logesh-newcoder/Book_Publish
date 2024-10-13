@@ -20,7 +20,6 @@ body {
     align-items: start;
     flex-wrap: wrap;
     justify-content: start;
-    padding-top: 80px; 
 }
 
 .top {
@@ -28,14 +27,10 @@ body {
     background-color: tan;
     padding: 10px 15px;
     font-size: 1.5rem;
-    position: fixed; 
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 1; 
 }
 .top button {
     font-size: 1.8rem;
