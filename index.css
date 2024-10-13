@@ -1,27 +1,23 @@
- 
-* {
+ * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     width: 100vw;
     height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    overflow-x:hidden;
 }
 .container {
     width: 100%;
     height: 100%;
     position: relative;
     display: flex;
-    flex-direction: row;
-    align-items: start;
-    flex-wrap: wrap;
-    justify-content: start;
+    flex-direction: column;
+    background-color: aqua;
 }
-
 .top {
     width: 100%;
     background-color: tan;
@@ -43,16 +39,22 @@ body {
     transition: all 0.5s linear;
     cursor: pointer;
 }
-
 .top button:hover {
     background-color: black;
     color: white;
     border: 5px solid slateblue;
 }
-
-.display {
+.show{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.show .display {
     width: 45%;
-    height: 400px;
+    height: 420px;
     background-color: sandybrown;
     margin: 0.8rem;
     padding: 1rem;
@@ -63,28 +65,23 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease-in-out;
 }
-
 .display:hover {
     transform: scale(1.02); 
 }
-
 p {
     padding: 10px 15px;
     text-transform: capitalize;
 }
-
 .bk-name {
     font-size: 2.5rem;
     text-align: center;
     color: #333;
 }
-
 .au-name {
     color: white;
     font-size: 2rem;
     text-align: end;
 }
-
 .bk-cont {
     font-size: 1.5rem;
     text-align: justify;
@@ -94,25 +91,22 @@ p {
     height: 100%;
     overflow-y: auto; 
 }
-
 .get {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.9); 
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
-
 .form {
     width: 100%;
     height: 100%;
     display: grid;
     place-content: center;
 }
-
 form {
     width: 60vw;
     max-width: 600px; 
@@ -123,14 +117,12 @@ form {
     display: flex;
     flex-direction: column;
 }
-
 form h2 {
     text-align: center;
     font-size: 2rem;
     margin: 10px 0;
     color: #333;
 }
-
 input,
 textarea {
     width: 100%;
@@ -140,16 +132,13 @@ textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
-
 textarea {
     resize: none;
 }
-
 .but {
     width: 100%;
     text-align: center;
 }
-
 .but button {
     margin: 10px;
     padding: 10px;
@@ -161,14 +150,12 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .but button:hover {
     background-color: black;
     color: white;
 }
-
 @media (min-width: 441px) and (max-width: 880px) {
-      .container {
+    .show{
         justify-content: start;
         align-items: start;
     }
@@ -180,10 +167,10 @@ textarea {
         font-size: 1.5rem;
         font-weight: 700;
     }    
-    .display {
+    .show .display {
         width: 45%;
         height: 370px;
-        margin: 1rem 1rem;
+        margin: 0.8rem 0.8rem;
         padding: 1rem;    
     }        
     p {
@@ -216,7 +203,12 @@ textarea {
     }
 }
 @media (max-width: 440px) {
-    .container {
+    .show{
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
         justify-content: center;
         align-items: start;
     }
@@ -228,8 +220,8 @@ textarea {
         font-size: 1.3rem;
         font-weight: 700;
     }    
-    .display {
-        width: 80%;
+    .show .display{
+        width: 85%;
         height: 330px;
         margin: 1rem 0rem;
         padding: 1rem;    
