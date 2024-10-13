@@ -3,11 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
+body{
     width: 100vw;
     height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+}
+.body{
+    width: 100%;
+    height: 100%;
     overflow-x:hidden;
 }
 .container {
@@ -16,7 +20,6 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
 }
 .top {
     width: 100%;
@@ -93,7 +96,7 @@ p {
 }
 .get {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.9); 
     position: absolute;
     top: 0;
@@ -205,10 +208,7 @@ textarea {
 @media (max-width: 440px) {
     .show{
         width: 100%;
-        background-color: black;
-        display: flex;
         flex-direction: row;
-        background-color: black;
         justify-content: center;
         align-items: start;
     }
