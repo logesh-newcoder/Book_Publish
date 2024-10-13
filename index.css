@@ -1,4 +1,4 @@
-
+ 
 * {
     padding: 0;
     margin: 0;
@@ -56,10 +56,10 @@ body {
 }
 
 .display {
-    width: 500px;
+    width: 45%;
     height: 400px;
     background-color: sandybrown;
-    margin: 1.5rem;
+    margin: 0.8rem;
     padding: 1rem;
     border-radius: 10px;
     border: 5px solid aqua;
