@@ -1,4 +1,4 @@
-let dis = document.querySelector(".container");
+let dis = document.querySelector(".show");
 let form = document.querySelector(".get");
 let bookname = document.querySelector("#book-name");
 let authorname = document.querySelector("#author-name");
