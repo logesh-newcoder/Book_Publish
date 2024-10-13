@@ -3,8 +3,8 @@ let form = document.querySelector(".get");
 let bookname = document.querySelector("#book-name");
 let authorname = document.querySelector("#author-name");
 let bookcontent = document.querySelector("#book-content");
-alert("This website is help you to create a book and store in the page");
 
+alert("This website is help you to create a book and store in the page");
 function make() {
     form.style.display = "block";
 }
