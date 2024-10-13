@@ -17,7 +17,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     flex-wrap: wrap;
     justify-content: start;
     padding-top: 80px; 
@@ -158,11 +158,12 @@ textarea {
 .but button {
     margin: 10px;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: black;
     background-color: white;
     border: 2px solid black;
     transition: all 0.3s ease-in-out;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -171,33 +172,100 @@ textarea {
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 441px) and (max-width: 880px) {
+      .container {
+        justify-content: start;
+        align-items: start;
+    }
+    .top {
+        padding: 10px 10px;
+        font-size: 1.5rem;
+    }
+    .top button {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }    
+    .display {
+        width: 45%;
+        height: 370px;
+        margin: 1rem 1rem;
+        padding: 1rem;    
+    }        
+    p {
+        padding: 7px 10px;
+        text-transform: capitalize;
+    }
+    .bk-name {
+        font-size: 2.1rem;
+    }    
+    .au-name {
+        font-size: 1.9rem;
+    }
+    .bk-cont {
+        font-size: 1.5rem;
+    }    
+    form h2 {
+        font-size: 1rem;
+    }
+    textarea {
+        height: 130px;
+    }
+    input,
+    textarea {
+        margin: 7px 0;
+        padding: 7px;
+        font-size: 1.2rem;
+    }    
+    form {
+        width: 85vw; 
+    }
+}
+@media (max-width: 440px) {
     .container {
         justify-content: center;
         align-items: start;
     }
+    .top {
+        padding: 10px 10px;
+        font-size: 1.3rem;
+    }
+    .top button {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }    
     .display {
         width: 80%;
-        margin: 1rem;
+        height: 330px;
+        margin: 1rem 0rem;
         padding: 1rem;    
+    }        
+    p {
+        padding: 7px 10px;
+        text-transform: capitalize;
     }
-    form h2 {
-        text-align: center;
+    .bk-name {
+        font-size: 1.7rem;
+    }    
+    .au-name {
         font-size: 1.5rem;
-        margin: 2px 0;
-        color: #333;
     }
-    
+    .bk-cont {
+        font-size: 1.2rem;
+    }    
+    form h2 {
+        font-size: 1rem;
+    }
+    textarea {
+        height: 100px;
+    }
     input,
     textarea {
         width: 100%;
         margin: 7px 0;
         padding: 7px;
         font-size: 1rem;
-        border-radius: 5px;
-        border: 1px solid #ccc;
     }    
     form {
-        width: 80vw; 
+        width: 85vw; 
     }
 }
